@@ -1,0 +1,54 @@
+Seção - JavaScript - primeiros passos
+O primeiro modulo do curso é uma introdução bem por cima do JavaScript, mostrando como criar variaives e chama-las, assim
+como criar funções, chamando essas funções através de botões com onclick. Ensinando também como fazer alterações com uso do DOM.
+
+Arrays 
+Criar arrays em js, utilizamos como uma variavel porém recebe através de []
+
+var lista = ["nome1","nome2","nome3"];
+
+ao chamar o array, é listado :
+
+(3) ['joão', 'maria', 'jose']
+0: "joão"
+1: "maria"
+2: "jose"
+length: 3
+
+para saber a quantidade de itens no array utilizamos :
+
+lista.length
+
+Para puxar apenas um item especifico, basta passar : lista[1] por exemplo, informando o indice do array.
+
+para saber em qual posição esta um item usamos :
+
+lista.indexOf("maria");
+
+é possivel juntar os arrays, com : lista.join(""); informando como quer juntar seja com virgula,barra,etc
+
+lista.join(",");
+
+para remover o ultimo item de um array usamos .pop();
+
+lista.pop();
+
+para remover o primeiro item de um array usamos .shift();
+
+lista.shift();
+
+para alterar um item especifico do array fazemos com que ele receba o valor no seu indice :
+
+lista[0] = "jose da silva" ; 
+
+e para adicionar um item, usamos .push("valor");
+
+lista.push("joao");
+
+é possivel fazer comparações em arrays, segue o exemplo :
+
+if(lista.indexOf("maria") > -1){
+    alert("Esse item está na lista");
+}else{
+    alert("Opa, não encontramos");
+}

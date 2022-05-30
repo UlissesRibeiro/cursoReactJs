@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+        /*function acao(){
+            document.write("Executando...<br>");
+        }
+        setInterval(acao,5000);*/
+        document.write("Escolha seu pedido!<br><br>");
+        document.write("0 - Sorvete / 1 - Suco<br>");
+        document.write("2 - Coca-cola / 3 - Água<br><br>");
+        function pedir(){
+            x=prompt("O que deseja pedir?");
+
+            switch(x){
+                case "0":
+                alert("Voce escolheu : Sorvete");
+                break;
+                case "1":
+                alert("Voce escolheu : Suco");
+                break;
+                case "2":
+                alert("Voce escolheu : Coca-cola");
+                break;
+                case "3":
+                alert("Voce escolheu : Água");
+                break;
+                default:
+                    alert("Opção invalida");
+                    break;
+            }
+        }
+    </script>
+    <button onclick="pedir()">Fazer pedido</button>
+
+</body>
+</html>

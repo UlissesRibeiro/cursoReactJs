@@ -1,0 +1,15 @@
+localStorage e sessionStorage
+
+o localStorage usamos para salvar dados de forma permanente no navegador
+localmente, onde criamos :
+
+localStorage.setItem(key,valor);
+localStorage.setItem("nome","ulisses");
+
+ou localStorage.nome("ulisses");
+
+para carregar os dados usamos getItem(key,valor);
+
+e para remover .removeItem(key);
+
+O sessionStorage segue o mesmo conceito, bastando apenas substituir local por session

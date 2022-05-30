@@ -1,0 +1,90 @@
+Loops
+
+while()
+
+while vem de "enquanto", ou seja, enquanto uma condição não estiver completada o codigo será executado até seu termino, exemplo
+
+x = 0;
+
+while(x < 10){
+    console.log(x);
+    x++;
+}
+
+onde enquanto x for menor que 10, será exibida uma lista de 0 até 9, pois a cada loop/ciclo o x é incrementado por ele mesmo com 
+x++ que é a mesma coisa de x = x+1;
+
+for()
+
+for(a=0;a < 10; a++){
+    console.log(a);
+}
+
+segue o mesmo conceito, porém são passado as 3 condições num unico "bloco"
+
+///////////////////////////////////////////
+
+switch
+
+usamos para fazer menus por exemplo, quando não queremos utilizar varios ifs, segue exemplo :
+
+x=2; //nesse caso já declaramos o valor de x
+
+switch(x){
+
+	case 0:
+	alert("O x vale 0!");
+	break;
+	case 1:
+	alert("O x vale 1!");
+	break;
+	case 2:
+	alert("O x vale 2!"); // retornando então esse resultado
+	break;
+}
+
+obs. : se for usar no modo prompt, ele vai reconhecer como string, então altere os cases colocando aspas duplas "2" por exemplo
+agora vamos criar algo mais interativo :
+
+
+    <script type="text/javascript">
+        document.write("Escolha seu pedido!<br><br>");
+        document.write("0 - Sorvete / 1 - Suco<br>");
+        document.write("2 - Coca-cola / 3 - Água<br><br>");
+        function pedir(){
+            x=prompt("O que deseja pedir?");
+
+            switch(x){
+                case "0":
+                alert("Voce escolheu : Sorvete");
+                break;
+                case "1":
+                alert("Voce escolheu : Suco");
+                break;
+                case "2":
+                alert("Voce escolheu : Coca-cola");
+                break;
+                case "3":
+                alert("Voce escolheu : Água");
+                break;
+                default:
+                    alert("Opção invalida");
+                    break;
+            }
+        }
+    </script>
+    <button onclick="pedir()">Fazer pedido</button>
+
+
+    temporização
+
+2 tipos de temporizadores, um que executa infinitamente a cada x segundos
+
+function acao(){
+	document.write("Executando...<br>");
+}
+
+setInterval(acao,1000); //onde 1000 é milisegundos, ou seja, 1 segundo
+
+
+setTimeout(acao,3000); // é executado apenas uma vez e se encerra
