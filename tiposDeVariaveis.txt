@@ -1,0 +1,3 @@
+var , pode ser acessado dentro e fora dos escopos de onde foi criado
+let , apenas pode ser acessado dentro do escopo onde foi criado
+const , 
