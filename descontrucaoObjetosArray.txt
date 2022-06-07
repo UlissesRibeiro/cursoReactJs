@@ -1,0 +1,31 @@
+consiste em pegar elementos que estejam dentro de objetos, segue o exemplo :
+
+const pessoa:{
+    nome : 'ulisses',
+    sobrenome : 'gomes',
+    idade : 2,
+    profissao : 'suporte infraestrutura'
+};
+
+para então pegarmos o que queremos do objeto chamamos atraves de variaveis 
+
+let {nome} = pessoa;
+
+e para mudar o nome da variavei basta usar 
+
+let {nome:primeiroNome} = pessoa; //por exemplo
+
+/////////////////////////////////
+agora em arrays
+
+let nomes = ['jose','maria','jose'];
+
+se pega o dado pela posição do item, exemplo
+
+let { 1:alunoUm} = nomes;
+
+é possivel tambem passando o nome da variavel direto, ja tendo em mente o padrão de preenchimento do array, exemplo
+
+let nomeCompleto = ['ulisses','gomes','ribeiro'];
+
+let [primeiroNome,nomeDoMeio,UltimoSobrenome] = nomeCompleto;

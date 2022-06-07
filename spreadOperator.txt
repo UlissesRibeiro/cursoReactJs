@@ -1,0 +1,23 @@
+o spread operator, na teoria vai juntar arrays e objetos sem a necessidade de ter que fazer tudo manualmente ou com outros metodos
+
+let primeiros = [1,2,3]; // nesse exemplo temos 3 valores, e queremos que o array numero, automaticamente
+                            receba os valores do array primeiros, então fazemos
+
+let numeros = [...primeiros,4,5,6]; // ... em seguida o nome do array.
+
+tendo resultado de numeros
+[1,2,3,4,5,6]
+
+agora em objetos
+
+let pessoa = {
+    nome: 'ulisses',
+    idade : 29,
+    cargo : 'suporte infra'
+};
+
+let novaPessoa = {
+    ...pessoa,
+    anoAtual: 2022,
+    cidade :'João pessoa'
+};
