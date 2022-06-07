@@ -1,0 +1,17 @@
+tem como ideia fazer com que funções consigam receber N valores, num unico argumento
+mesmo esquema do spread, basta colocar ... ao lado do argumento, segue exemplo:
+
+function cadastro(nome){
+
+};
+
+cadastro('ulisses','mayara');
+
+ao passar 2 args na função sem usar o rest, ele vai receber apenas o primeiro arg 'ulisses', para receber todos
+bastar usar ...
+
+function cadastro(...nome){
+
+};
+
+cadastro('ulisses','mayara');
